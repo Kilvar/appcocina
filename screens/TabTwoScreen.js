@@ -13,12 +13,13 @@ const images = [
   "https://avanti.com.uy/wp-content/uploads/2021/04/Ravioles-de-Verdura-con-Salsa-Rosa-2.jpg"
 ]
 
+
 export default class TabTwoScreen extends React.Component {
   render() {
 
     return (
       <View style={{ marginTop: 50 }, width, height}>
-        <Text style={styles.title}>comida</Text>
+        
         <ScrollView
           showsHorizontalScrollIndicator={false}
           pagingEnabled horizontal style={{ width, height }}>
@@ -29,6 +30,7 @@ export default class TabTwoScreen extends React.Component {
                 key={index}
                 source={{ uri: image }}
                 style={styles.image} />
+
             ))
           }
         </ScrollView>
@@ -44,6 +46,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   container: {
+    flex: 0,
     alignItems: 'center',
     justifyContent: 'center',
   },

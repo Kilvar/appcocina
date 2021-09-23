@@ -9,6 +9,7 @@ import * as React from 'react';
 
 import TabOneScreen  from "../screens/TabOneScreen";
 import TabTwoScreen from '../screens/TabTwoScreen';
+import TabThreeScreen from '../screens/TabThreeScreen';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -63,7 +64,7 @@ export default function MyTabs() {
       />
       <Tab.Screen
         name="Usuario"
-        component={TabTwoScreen}
+        component={TabThreeScreen}
         options={{
           tabBarLabel: 'Usuario',
           tabBarIcon: ({ color, size }) => (
